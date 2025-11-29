@@ -12,9 +12,6 @@
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
   <script>
-    // In a real project, this config object should be in a tailwind.config.js file
-    // and compiled via a build process (e.g., PostCSS/CLI).
-    // Keeping it here for quick demo purposes with the CDN.
     tailwind = {
       config: {
         theme: {
@@ -46,6 +43,21 @@
     .apexcharts-tooltip-title {
       background: #030418 !important;
       border-bottom: 1px solid #334155 !important;
+    }
+    /* Menambah kelas khusus untuk container lebar, menggunakan max-w-screen-2xl untuk layar ultra-lebar */
+    .wide-container {
+        max-width: 1536px; /* max-w-screen-2xl */
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.5rem; /* px-6 */
+        padding-right: 1.5rem; /* px-6 */
+    }
+    /* Menyesuaikan padding untuk layar besar */
+    @media (min-width: 1280px) { /* xl */
+        .wide-container {
+            padding-left: 2rem; /* xl:px-8 */
+            padding-right: 2rem; /* xl:px-8 */
+        }
     }
   </style>
 </head>
@@ -86,7 +98,7 @@
   </div>
 
   <header class="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-black/30 border-b border-white/6">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+    <div class="wide-container py-4 flex items-center justify-between gap-6">
       <a href="#" class="flex items-center gap-3">
         <svg class="w-10 h-10 rounded-2xl bg-gradient-to-br from-neon-cyan to-neon-magenta p-2 drop-shadow-lg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect width="24" height="24" rx="5" fill="white" opacity="0.06"/>
@@ -118,7 +130,7 @@
 
   <div class="h-20"></div>
 
-  <section class="max-w-7xl mx-auto px-6 py-16 lg:py-20">
+  <section class="wide-container py-16 lg:py-20">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div class="space-y-6 reveal opacity-0 translate-y-8 transition-all duration-700">
         <p class="inline-flex items-center gap-3 text-sm text-slate-300 font-medium">
@@ -151,22 +163,22 @@
           </div>
 
           <div class="mt-6 p-4 rounded-xl bg-black/40 border border-white/5 relative h-48 flex items-center justify-center overflow-hidden">
-              <div class="absolute inset-0 grid grid-cols-6 grid-rows-4 opacity-10">
-                <div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class=""></div>
-              </div>
-              <svg class="w-full h-full absolute bottom-0 left-0" preserveAspectRatio="none" viewBox="0 0 200 100">
-                <path d="M0 80 Q 20 70 40 85 T 80 60 T 120 40 T 160 50 T 200 20" fill="none" stroke="url(#gradLine)" stroke-width="3"/>
-                <defs>
-                  <linearGradient id="gradLine" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stop-color="#00F5FF"/>
-                      <stop offset="100%" stop-color="#FF3CA6"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-              <div class="text-center z-10">
-                  <div class="text-3xl font-bold tracking-widest">FUTURE<span class="text-neon-cyan">.AI</span></div>
-                  <div class="text-xs text-slate-400 mt-1">Processing 1.2M signals/sec</div>
-              </div>
+             <div class="absolute inset-0 grid grid-cols-6 grid-rows-4 opacity-10">
+               <div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class=""></div>
+             </div>
+             <svg class="w-full h-full absolute bottom-0 left-0" preserveAspectRatio="none" viewBox="0 0 200 100">
+                 <path d="M0 80 Q 20 70 40 85 T 80 60 T 120 40 T 160 50 T 200 20" fill="none" stroke="url(#gradLine)" stroke-width="3"/>
+                 <defs>
+                   <linearGradient id="gradLine" x1="0" y1="0" x2="1" y2="0">
+                       <stop offset="0%" stop-color="#00F5FF"/>
+                       <stop offset="100%" stop-color="#FF3CA6"/>
+                   </linearGradient>
+                 </defs>
+             </svg>
+             <div class="text-center z-10">
+                 <div class="text-3xl font-bold tracking-widest">FUTURE<span class="text-neon-cyan">.AI</span></div>
+                 <div class="text-xs text-slate-400 mt-1">Processing 1.2M signals/sec</div>
+             </div>
           </div>
 
           <div class="mt-6 grid grid-cols-3 gap-3">
@@ -191,7 +203,7 @@
   <section id="market" class="py-12 border-t border-white/6 bg-black/20 relative">
     <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-neon-cyan to-transparent opacity-30"></div>
     
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="wide-container">
       <div class="flex items-center justify-between mb-8">
         <h2 class="text-2xl font-bold flex items-center gap-2">
           <span class="w-2 h-8 bg-neon-cyan rounded-full"></span>
@@ -258,7 +270,7 @@
   </section>
 
   <section id="features" class="py-12">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="wide-container">
         <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-3xl font-bold">Fitur Platform</h2>
         <p class="text-slate-300 mt-3">Rangkaian fitur inti untuk Market Intelligence, kecepatan pengambilan keputusan, dan keunggulan operasional.</p>
@@ -299,7 +311,7 @@
   </section>
 
   <section id="platform" class="py-16">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <div class="wide-container grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <div class="reveal opacity-0 translate-y-8 transition-all duration-700">
         <h3 class="text-2xl font-bold">Platform Arsitektur</h3>
         <p class="text-slate-300 mt-2 max-w-lg">Platform kami dibangun dengan prinsip reliability, developer happiness, dan observability-first.</p>
@@ -354,7 +366,7 @@
   </section>
 
   <section id="case" class="py-16 border-t border-white/6">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="wide-container">
       <div class="text-center">
         <h2 class="text-3xl font-bold">Case Studies</h2>
         <p class="text-slate-300 mt-2 max-w-2xl mx-auto">Dampak nyata transformasi digital.</p>
@@ -363,24 +375,24 @@
         <article class="reveal opacity-0 translate-y-8 transition-all duration-700 p-6 rounded-2xl bg-gradient-to-b from-white/4 to-white/2 border border-white/6">
           <div class="font-semibold">Fintech X</div>
           <p class="text-slate-300 text-sm mt-2">Migrasi ke edge reduced latency by 45% dan throughput naik 3x.</p>
-          <div class="mt-4 text-xs text-slate-400">Result: +45% perf, -30% cost</div>
+          <div class="mt-4 text-xs text-slate-400">Hasil: +45% perf, -30% cost</div>
         </article>
         <article class="reveal opacity-0 translate-y-8 transition-all duration-700 delay-100 p-6 rounded-2xl bg-gradient-to-b from-white/4 to-white/2 border border-white/6">
           <div class="font-semibold">Retail Z</div>
           <p class="text-slate-300 text-sm mt-2">Integrasi observability meningkatkan MTTR dari 4 jam menjadi 20 menit.</p>
-          <div class="mt-4 text-xs text-slate-400">Result: MTTR ⬇ 90%</div>
+          <div class="mt-4 text-xs text-slate-400">Hasil: MTTR ⬇ 90%</div>
         </article>
         <article class="reveal opacity-0 translate-y-8 transition-all duration-700 delay-200 p-6 rounded-2xl bg-gradient-to-b from-white/4 to-white/2 border border-white/6">
           <div class="font-semibold">Media Y</div>
           <p class="text-slate-300 text-sm mt-2">Autoscaling cerdas menahan peak 20x tanpa downtime saat event besar.</p>
-          <div class="mt-4 text-xs text-slate-400">Result: 0 downtime saat peak</div>
+          <div class="mt-4 text-xs text-slate-400">Hasil: 0 downtime saat peak</div>
         </article>
       </div>
     </div>
   </section>
 
   <section id="pricing" class="py-16 border-t border-white/6">
-    <div class="max-w-7xl mx-auto px-6 text-center">
+    <div class="wide-container text-center">
       <h2 class="text-3xl font-bold">Pilih Paket</h2>
       <p class="text-slate-300 mt-2 max-w-2xl mx-auto">Transparan dan dapat diskalakan.</p>
 
@@ -435,7 +447,7 @@
   </section>
 
   <footer class="border-t border-white/6 pt-10 pb-16 mt-12">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+    <div class="wide-container grid grid-cols-1 md:grid-cols-4 gap-6">
       <div>
         <div class="font-semibold">FUTURE • EXPERIENCE</div>
         <div class="text-slate-400 mt-2 text-sm">Platform modern untuk tim yang serius terhadap kualitas dan performa.</div>
@@ -446,7 +458,7 @@
           <li>Platform</li>
           <li>Observability</li>
           <li>Live Market</li>
-        </ul>
+          </ul>
       </div>
       <div>
         <div class="font-semibold">Company</div>
@@ -463,7 +475,7 @@
         </ul>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-6 mt-8 text-sm text-slate-400">
+    <div class="wide-container mt-8 text-sm text-slate-400">
       <div>© <span id="year"></span> FUTURE • EXPERIENCE — All rights reserved.</div>
     </div>
   </footer>
@@ -492,6 +504,7 @@
       let yearly = false;
       toggle.addEventListener('click', () => {
         yearly = !yearly;
+        // Animasi knob menggunakan CSS transition (transform di style.css/Tailwind config)
         knob.style.transform = yearly ? 'translateX(22px)' : 'translateX(0)';
         toggle.setAttribute('aria-pressed', yearly ? 'true' : 'false');
         document.querySelectorAll('.price').forEach(el => {
@@ -581,7 +594,6 @@
       chartIHSG.updateSeries([{ data: ihsgData }]);
       document.getElementById('price-ihsg').innerText = newIhsg.toFixed(2).toLocaleString();
     }, 1500); 
-
   </script>
 </body>
 </html>
