@@ -44,19 +44,31 @@
       background: #030418 !important;
       border-bottom: 1px solid #334155 !important;
     }
-    /* Menambah kelas khusus untuk container lebar, menggunakan max-w-screen-2xl untuk layar ultra-lebar */
+    /* Menghilangkan max-width agar mengisi seluruh lebar layar */
     .wide-container {
-        max-width: 1536px; /* max-w-screen-2xl */
+        width: 100%; /* Memastikan container selalu mengisi lebar penuh */
         margin-left: auto;
         margin-right: auto;
-        padding-left: 1.5rem; /* px-6 */
-        padding-right: 1.5rem; /* px-6 */
+        padding-left: 1.5rem; /* px-6 - Padding default untuk semua ukuran layar */
+        padding-right: 1.5rem; /* px-6 - Padding default untuk semua ukuran layar */
     }
-    /* Menyesuaikan padding untuk layar besar */
+    /* Menyesuaikan padding untuk layar besar, agar tidak terlalu mepet ke pinggir */
+    @media (min-width: 1024px) { /* lg */
+        .wide-container {
+            padding-left: 4rem; /* lg:px-16, atau bisa disesuaikan */
+            padding-right: 4rem; /* lg:px-16, atau bisa disesuaikan */
+        }
+    }
     @media (min-width: 1280px) { /* xl */
         .wide-container {
-            padding-left: 2rem; /* xl:px-8 */
-            padding-right: 2rem; /* xl:px-8 */
+            padding-left: 6rem; /* xl:px-24, atau bisa disesuaikan */
+            padding-right: 6rem; /* xl:px-24, atau bisa disesuaikan */
+        }
+    }
+    @media (min-width: 1536px) { /* 2xl */
+        .wide-container {
+            padding-left: 8rem; /* 2xl:px-32, atau bisa disesuaikan */
+            padding-right: 8rem; /* 2xl:px-32, atau bisa disesuaikan */
         }
     }
   </style>
