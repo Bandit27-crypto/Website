@@ -1,10 +1,9 @@
-<!doctype html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FUTURE • Enterprise Experience</title>
-  <meta name="description" content="Situs demo futuristik — desain modern, profesional, perhatian penuh." />
+  <meta name="description" content="Futuristic demo site — modern, professional, mindful design." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +12,9 @@
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
   <script>
+    // In a real project, this config object should be in a tailwind.config.js file
+    // and compiled via a build process (e.g., PostCSS/CLI).
+    // Keeping it here for quick demo purposes with the CDN.
     tailwind = {
       config: {
         theme: {
@@ -35,6 +37,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   
   <style>
+    /* Custom styling for ApexCharts tooltip to match the dark theme */
     .apexcharts-tooltip {
       background: #071027 !important;
       border-color: #334155 !important;
@@ -124,7 +127,7 @@
         </p>
 
         <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-         Visualisasi Data & <br/><span>Market Intelligence</span>
+          Visualisasi Data & <br/><span>Market Intelligence</span>
         </h1>
 
         <p class="text-lg text-slate-300 max-w-xl">
@@ -148,22 +151,22 @@
           </div>
 
           <div class="mt-6 p-4 rounded-xl bg-black/40 border border-white/5 relative h-48 flex items-center justify-center overflow-hidden">
-             <div class="absolute inset-0 grid grid-cols-6 grid-rows-4 opacity-10">
+              <div class="absolute inset-0 grid grid-cols-6 grid-rows-4 opacity-10">
                 <div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class="border-r border-white"></div><div class=""></div>
-             </div>
-             <svg class="w-full h-full absolute bottom-0 left-0" preserveAspectRatio="none" viewBox="0 0 200 100">
-                 <path d="M0 80 Q 20 70 40 85 T 80 60 T 120 40 T 160 50 T 200 20" fill="none" stroke="url(#gradLine)" stroke-width="3"/>
-                 <defs>
-                    <linearGradient id="gradLine" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#00F5FF"/>
-                        <stop offset="100%" stop-color="#FF3CA6"/>
-                    </linearGradient>
-                 </defs>
-             </svg>
-             <div class="text-center z-10">
-                 <div class="text-3xl font-bold tracking-widest">FUTURE<span class="text-neon-cyan">.AI</span></div>
-                 <div class="text-xs text-slate-400 mt-1">Processing 1.2M signals/sec</div>
-             </div>
+              </div>
+              <svg class="w-full h-full absolute bottom-0 left-0" preserveAspectRatio="none" viewBox="0 0 200 100">
+                <path d="M0 80 Q 20 70 40 85 T 80 60 T 120 40 T 160 50 T 200 20" fill="none" stroke="url(#gradLine)" stroke-width="3"/>
+                <defs>
+                  <linearGradient id="gradLine" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#00F5FF"/>
+                      <stop offset="100%" stop-color="#FF3CA6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="text-center z-10">
+                  <div class="text-3xl font-bold tracking-widest">FUTURE<span class="text-neon-cyan">.AI</span></div>
+                  <div class="text-xs text-slate-400 mt-1">Processing 1.2M signals/sec</div>
+              </div>
           </div>
 
           <div class="mt-6 grid grid-cols-3 gap-3">
@@ -266,8 +269,8 @@
             <div class="flex items-start gap-4">
             <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-2xl">📊</div>
             <div>
-                <h3 class="font-semibold text-lg">Visualisasi Real-time</h3>
-                <p class="text-slate-300 mt-1 text-sm">Grafik dan dashboard yang diperbarui secara langsung dengan latensi kurang dari 100ms.</p>
+              <h3 class="font-semibold text-lg">Visualisasi Real-time</h3>
+              <p class="text-slate-300 mt-1 text-sm">Grafik dan dashboard yang diperbarui secara langsung dengan latensi kurang dari 100ms.</p>
             </div>
             </div>
         </article>
@@ -276,8 +279,8 @@
             <div class="flex items-start gap-4">
             <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-2xl">🧠</div>
             <div>
-                <h3 class="font-semibold text-lg">AI Anomaly Detection</h3>
-                <p class="text-slate-300 mt-1 text-sm">Mendeteksi anomali pergerakan harga secara instan dan memberikan peringatan dini.</p>
+              <h3 class="font-semibold text-lg">AI Anomaly Detection</h3>
+              <p class="text-slate-300 mt-1 text-sm">Mendeteksi anomali pergerakan harga secara instan dan memberikan peringatan dini.</p>
             </div>
             </div>
         </article>
@@ -286,11 +289,11 @@
             <div class="flex items-start gap-4">
             <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-2xl">🌐</div>
             <div>
-                <h3 class="font-semibold text-lg">Global Data Aggregation</h3>
-                <p class="text-slate-300 mt-1 text-sm">Menggabungkan data dari berbagai bursa global, memastikan cakupan market yang komprehensif.</p>
+              <h3 class="font-semibold text-lg">Global Data Aggregation</h3>
+              <p class="text-slate-300 mt-1 text-sm">Menggabungkan data dari berbagai bursa global, memastikan cakupan market yang komprehensif.</p>
             </div>
             </div>
-      </article>
+        </article>
       </div>
     </div>
   </section>
@@ -360,17 +363,17 @@
         <article class="reveal opacity-0 translate-y-8 transition-all duration-700 p-6 rounded-2xl bg-gradient-to-b from-white/4 to-white/2 border border-white/6">
           <div class="font-semibold">Fintech X</div>
           <p class="text-slate-300 text-sm mt-2">Migrasi ke edge reduced latency by 45% dan throughput naik 3x.</p>
-          <div class="mt-4 text-xs text-slate-400">Hasil: +45% perf, -30% cost</div>
+          <div class="mt-4 text-xs text-slate-400">Result: +45% perf, -30% cost</div>
         </article>
         <article class="reveal opacity-0 translate-y-8 transition-all duration-700 delay-100 p-6 rounded-2xl bg-gradient-to-b from-white/4 to-white/2 border border-white/6">
           <div class="font-semibold">Retail Z</div>
           <p class="text-slate-300 text-sm mt-2">Integrasi observability meningkatkan MTTR dari 4 jam menjadi 20 menit.</p>
-          <div class="mt-4 text-xs text-slate-400">Hasil: MTTR ⬇ 90%</div>
+          <div class="mt-4 text-xs text-slate-400">Result: MTTR ⬇ 90%</div>
         </article>
         <article class="reveal opacity-0 translate-y-8 transition-all duration-700 delay-200 p-6 rounded-2xl bg-gradient-to-b from-white/4 to-white/2 border border-white/6">
           <div class="font-semibold">Media Y</div>
           <p class="text-slate-300 text-sm mt-2">Autoscaling cerdas menahan peak 20x tanpa downtime saat event besar.</p>
-          <div class="mt-4 text-xs text-slate-400">Hasil: 0 downtime saat peak</div>
+          <div class="mt-4 text-xs text-slate-400">Result: 0 downtime saat peak</div>
         </article>
       </div>
     </div>
@@ -384,7 +387,7 @@
       <div class="mt-6 inline-flex items-center gap-3 bg-white/3 p-1 rounded-full">
         <span class="text-xs text-slate-300 px-3">Bulanan</span>
         <button id="billingToggle" class="relative w-14 h-7 bg-gradient-to-r from-neon-cyan to-neon-magenta rounded-full p-1 shadow-sm" aria-pressed="false" aria-label="Toggle billing">
-          <span id="toggleKnob" class="block w-5 h-5 rounded-full bg-black"></span>
+          <span id="toggleKnob" class="block w-5 h-5 rounded-full bg-black transition-transform duration-300"></span>
         </button>
         <span class="text-xs text-slate-300 px-3">Tahunan (-20%)</span>
       </div>
@@ -468,6 +471,7 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Intersection Observer for Scroll Animations
     document.addEventListener('DOMContentLoaded', () => {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -481,6 +485,7 @@
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     });
 
+    // Billing Toggle Logic (Monthly/Yearly)
     (function() {
       const toggle = document.getElementById('billingToggle');
       const knob = document.getElementById('toggleKnob');
@@ -495,6 +500,7 @@
       });
     })();
     
+    // Function to generate simulated market data
     function generateData(count, min, max) {
       let data = [];
       let prev = (min + max) / 2;
@@ -509,6 +515,7 @@
       return data;
     }
 
+    // Common options for ApexCharts sparklines
     const commonOptions = {
       chart: {
         type: 'area',
@@ -521,6 +528,7 @@
       tooltip: { fixed: { enabled: false }, x: { show: false }, y: { title: { formatter: () => '' } }, marker: { show: false } }
     };
 
+    // Initialize BTC Chart
     const btcData = generateData(20, 40000, 43000);
     const chartBTC = new ApexCharts(document.querySelector("#chart-btc"), {
       ...commonOptions,
@@ -529,6 +537,7 @@
     });
     chartBTC.render();
 
+    // Initialize ETH Chart
     const ethData = generateData(20, 2000, 2400);
     const chartETH = new ApexCharts(document.querySelector("#chart-eth"), {
       ...commonOptions,
@@ -537,6 +546,7 @@
     });
     chartETH.render();
 
+    // Initialize IHSG Chart
     const ihsgData = generateData(20, 7000, 7200);
     const chartIHSG = new ApexCharts(document.querySelector("#chart-ihsg"), {
       ...commonOptions,
@@ -545,7 +555,9 @@
     });
     chartIHSG.render();
 
+    // Live Data Update Simulation
     setInterval(() => {
+      // BTC Update
       const lastBtc = btcData[btcData.length-1];
       const newBtc = lastBtc + (Math.random() - 0.5) * 200;
       btcData.push(newBtc);
@@ -553,6 +565,7 @@
       chartBTC.updateSeries([{ data: btcData }]);
       document.getElementById('price-btc').innerText = '$' + Math.floor(newBtc).toLocaleString();
 
+      // ETH Update
       const lastEth = ethData[ethData.length-1];
       const newEth = lastEth + (Math.random() - 0.5) * 20;
       ethData.push(newEth);
@@ -560,6 +573,7 @@
       chartETH.updateSeries([{ data: ethData }]);
       document.getElementById('price-eth').innerText = '$' + Math.floor(newEth).toLocaleString();
 
+      // IHSG Update
       const lastIhsg = ihsgData[ihsgData.length-1];
       const newIhsg = lastIhsg + (Math.random() - 0.5) * 15;
       ihsgData.push(newIhsg);
